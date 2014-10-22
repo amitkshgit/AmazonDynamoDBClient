@@ -61,7 +61,7 @@ ActionError actionError;
 SYSTEM_MODE(AUTOMATIC);
 
 /* Get DeviceID */
-String myIDStr = Spark.deviceID(); 
+String myIDStr = Spark.deviceID();
 
 /* This function is called once at start up ----------------------------------*/
 void setup()
@@ -88,8 +88,7 @@ void loop()
 	rssi = WiFi.RSSI();
 /* Create an Item. */
         AttributeValue deviceValue;
-/*        deviceValue.setS(HASH_KEY_VALUE); */
-        deviceValue.setS(deviceId); 
+        deviceValue.setS(HASH_KEY_VALUE);
         AttributeValue timeValue;
         /* Getting current time for Time attribute. */
         timeValue.setS(dateTimeProvider.getDateTime());
