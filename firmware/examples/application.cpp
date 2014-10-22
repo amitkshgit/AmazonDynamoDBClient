@@ -25,10 +25,10 @@
 
 /* Includes ------------------------------------------------------------------*/  
 #include "application.h"
-#include "aws-dynamodb-spark/AmazonDynamoDBClient.h"
-#include "aws-dynamodb-spark/SparkAWSImplementations.h"
-#include "aws-dynamodb-spark/AWSFoundationalTypes.h"
-#include "aws-dynamodb-spark/keys.h"
+#include "AmazonDynamodDBClient/AmazonDynamoDBClient.h"
+#include "AmazonDynamodDBClient/SparkAWSImplementations.h"
+#include "AmazonDynamodDBClient/AWSFoundationalTypes.h"
+#include "AmazonDynamodDBClient/keys.h"
 
 int rssi = 0;
 
