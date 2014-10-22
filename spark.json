@@ -1,0 +1,7 @@
+{
+    "name": "AmazonDynamodDBClient",
+    "version": "0.0.1",
+    "author": "Amit Sharma <amitksh@yahoo.com>",
+    "license": "Choose a license",
+    "description": "Amazon DynamoDB Client for Spark Core."
+}
