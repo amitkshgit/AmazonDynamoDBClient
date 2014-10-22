@@ -62,8 +62,6 @@ SYSTEM_MODE(AUTOMATIC);
 
 /* Get DeviceID */
 String myIDStr = Spark.deviceID(); 
-char * deviceId = new char[myIDStr.length() + 1];
-strcpy(deviceId, myIDStr.c_str());
 
 /* This function is called once at start up ----------------------------------*/
 void setup()
