@@ -592,7 +592,7 @@ bool AttributeValue::jsonDeserialize(MinimalString json) {
 
     if (serializedSS != NULL) {
         SSBeenSet = true;
-        if (!SS.jsonDeserialize(serializedSS)) {
+        if (!SSDDB.jsonDeserialize(serializedSS)) {
             toReturn = false;
         }
     }
@@ -669,7 +669,7 @@ MinimalString AttributeValue::jsonSerialize() const {
     int pairsAssigned = 0;
 
     if (SSBeenSet) {
-        MinimalString pairValue = SS.jsonSerialize();
+        MinimalString pairValue = SSDDB.jsonSerialize();
         pairValue.setAlreadySerialized(true);
         pairs[pairsAssigned++] = MinimalKeyValuePair<MinimalString,MinimalString>(SS_KEY, pairValue);
     }
@@ -706,7 +706,7 @@ MinimalString AttributeValue::jsonSerialize() const {
 
 void AttributeValue::setSS(MinimalList<MinimalString > SS) {
     SSBeenSet = true;
-    this->SS = SS;
+    this->SSDDB = SS;
 }
 
 void AttributeValue::setBS(MinimalList<MinimalString > BS) {
@@ -735,7 +735,7 @@ void AttributeValue::setN(MinimalString N) {
 }
 
 MinimalList<MinimalString > AttributeValue::getSS() const {
-    return SS;
+    return SSDDB;
 }
 
 MinimalList<MinimalString > AttributeValue::getBS() const {
